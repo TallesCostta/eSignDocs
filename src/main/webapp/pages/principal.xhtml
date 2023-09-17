@@ -24,18 +24,18 @@
 				</div>
 				<div>
 					<ul class="navegador">
-						<li><a href="#">Inicio</a></li>
-						<li><a href="#">Assinar documento</a></li>
-						<li><a href="#">Autenticar assinatura</a></li>
-						<li><a href="#">Sobre</a></li>
+						<li><p:commandLink action="#{menuBean.goToInicio()}" value="Inicio" /></li>
+						<li><p:commandLink action="#{menuBean.goToAssign()}" value="Assinar documento" /></li>
+						<li><p:commandLink action="#{menuBean.goToAuthAssign()}" value="Autenticar assinatura" /></li>
+						<li><p:commandLink action="#{menuBean.goToAbout()}" value="Sobre" /></li>
 					</ul>
 				</div>
 				<div>
 					<ul class="login-register">
 						<li><ion-icon name="person-sharp"></ion-icon><p:commandLink icon="pi pi-user"
-								action="#{managedBean.registrar}" value="Login" /></li>
+								action="#{menuBean.goToLogin()}" value="Login" /></li>
 						<li><ion-icon name="person-add-sharp"></ion-icon><p:commandLink icon="pi pi-user"
-								action="#{managedBean.registrar}" value="Regitre-se" /></li>
+								action="#{menuBean.goToRegister()}" value="Regitre-se" /></li>
 					</ul>
 				</div>
 
@@ -62,7 +62,7 @@
 			</p>
 		</div>
 		<div class="btn-info">
-			<p:commandButton value="Saiba mais" type="button" />
+			<p:commandButton value="Saiba mais" type="button" action="#{menuBean.goToAbout()}"/>
 		</div>
 		<div class="card-info">
 			<div class="info">
@@ -124,18 +124,18 @@
 			<div class="meio-contato">
 				<h3>Explore</h3>
 				<ul>
-					<li><a href="#">Inicio</a></li>
-					<li><a href="#">Assinar documento</a></li>
-					<li><a href="#">Autenticar assinatura</a></li>
-					<li><a href="#">Formatos suportados</a></li>
+					<li><p:commandLink action="#{menuBean.goToInicio()}" value="Inicio" /></li>
+					<li><p:commandLink action="#{menuBean.goToAssign()}" value="Assinar documento" /></li>
+					<li><p:commandLink action="#{menuBean.goToAuthAssign()}" value="Autenticar assinatura" /></li>
+					<li><p:commandLink action="#{menuBean.goToDocTypes()}" value="Formatos suportados" /></li>
 				</ul>
 			</div>
 			<div class="meio-contato">
 				<h3>Outros</h3>
 				<ul>
-					<li><a href="#">Politica de privacidade</a></li>
-					<li><a href="#">Termos e condições</a></li>
-					<li><a href="#">Ajuda</a></li>
+					<li><p:commandLink action="#{menuBean.goToPrivacy()}" value="Politica de privacidade" /></li>
+					<li><p:commandLink action="#{menuBean.goToTermUser()}" value="Termos e condições" /></li>
+					<li><p:commandLink action="#{menuBean.goToHelp()}" value="Ajuda" /></li>
 				</ul>
 			</div>
 			<div class="meio-contato">

@@ -33,7 +33,6 @@ header {
 }
 
 body {
-	display: flex;
 	justify-content: center;
 	align-items: center;
 	width: 100%;
@@ -41,67 +40,6 @@ body {
 	overflow-x: hidden;
 	margin: 0;
   	padding: 0;
-  	
-}
-
-.card-info {
-	display: flex;
-	flex-direction: column;
-}
-
-.info {
-	margin-top: 14%;
-	margin-left: 12%;
-}
-
-.info h1{
-	width: 600px;
-	height: 30px;
-	font-size: 40px;
-	font-weight: bold;
-	text-align: left;
-	letter-spacing: 1px;
-}
-
-.card-info {
-    display: flex;
-    justify-content: space-between;
-}
-
-.sub-card {
-	margin-left: 50%;
-	margin-top: -1%;
-}
-
-.sub-text {
-	width: 300px;
-	height: 5px;
-	
-}
-.sub-text p {
-	text-align: justify;
-	margin-top: 2%;
-	letter-spacing: 0;
-}
-
-.sub-info {
-	width: 450px;
-}
-
-.sub-info h1 {
-	font-size: 30px;	
-	width: 300px;
-}
-
-.info-beetwen {
-	display: flex;
-	flex-direction: row;
-}
-
-.info-beetwen-end{
-	display: flex;
-	flex-direction: row;
-	margin-top: 15%;
 }
 
 .logo{
@@ -191,56 +129,6 @@ body {
     align-items: center;
 }
 
-.meio-conteudo {
-    display: flex;
-    position: absolute;
-    height: 80px;
-    margin-top: -28rem;
-}
-
-.meio-conteudo button:hover {
-    transition: all .60s ease;
-    background-color: black;
-    color: var(--main-color);
-}
-
-.meio-conteudo p{
-    display: flex;
-    margin-left: 300px;
-    padding: 20px;
-    color: #000000;
-}
-
-.meio-conteudo img {
-    margin-left: -300px;
-    margin-top: -200px;
-    height: 645px;
-}
-
-.conteudo {
-	align-items: center;
-	padding: 150px;
-	text-align: left;
-	margin-left: 8%;
-}
-
-.img-dsc {
-	margin-left: 11%;
-	width: 80%;
-	height: 60%;
-}
-
-.descricao {
-	margin-left: 20%;
-	width: 1300px;
-	height: 100px;
-}
-
-.descricao p{
-	font-size: 20px;
-	text-align: justify;
-}
-
 button.ui-button {
      background: #1e1e1e;
      position: absolute !important;
@@ -258,7 +146,7 @@ button.ui-button:hover {
      font-weight: bold;
 }
 
-body .ui-commandlink:hover {
+.ui-commandlink:hover {
 	color: #ffffff;
 }
 
@@ -267,14 +155,16 @@ body .ui-commandlink:hover {
 	margin-top: 30px;
 }
 
-#contato{
+#contato {
+    bottom: 0;
+    width: 100%;
     display: flex;
     gap: 12rem;
     justify-content: center;
-    background-color: var(--bg-color);
+    background-color: var(--bg-color) !important;
     padding: 2rem;
     margin-top: 10rem;
-	grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
 }
 
 .meio-contato h3{
@@ -311,13 +201,16 @@ body .ui-commandlink:hover {
 
 .last-text{
     background-color: var(--bg-color-footer);
-    margin-top: -20px;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: -3rem;
 }
 
 .last-text p{
     font-weight: 500;
     font-size: 14px;
-    margin-top: -20px;
     text-align: center;
     color: var(--text-footer);
 }

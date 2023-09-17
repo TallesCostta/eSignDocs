@@ -14,7 +14,7 @@ public class MenuBean implements Serializable{
 	private static final long serialVersionUID = 3119191707645092014L;
 	
 	public void goToInicio() {
-        redirectTo("principal.xhtml");
+        redirectTo("inicio.xhtml");
     }
 
     public void goToAssign() {

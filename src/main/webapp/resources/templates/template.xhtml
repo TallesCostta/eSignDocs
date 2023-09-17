@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt_BR" xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:ui="http://java.sun.com/jsf/facelets">
+
+<h:head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet"
+		href="#{request.contextPath}/resources/css/template.css" />
+	<link rel="shortcut icon"
+		href="#{request.contextPath}/resources/images/icon.png" />
+	<title>eSign Docs - Assinatura Digital de Documentos</title>
+</h:head>
+
+<body>
+	<h:form>
+		<header>
+			<div class="nav">
+				<div class="logo">
+					<h:graphicImage library="images" name="logo.png" alt="Logo" />
+				</div>
+				<div>
+					<ul class="navegador">
+						<li><p:commandLink action="#{menuBean.goToInicio()}"
+								value="Início" /></li>
+						<li><p:commandLink action="#{menuBean.goToAssign()}"
+								value="Assinar Documento" /></li>
+						<li><p:commandLink action="#{menuBean.goToAuthAssign()}"
+								value="Autenticar Assinatura" /></li>
+						<li><p:commandLink action="#{menuBean.goToAbout()}"
+								value="Sobre" /></li>
+					</ul>
+				</div>
+				<div>
+					<ul class="login-register">
+						<li><ion-icon name="person-sharp"></ion-icon> <p:commandLink
+								icon="pi pi-user" action="#{menuBean.goToLogin()}" value="Login" /></li>
+						<li><ion-icon name="person-add-sharp"></ion-icon> <p:commandLink
+								icon="pi pi-user" action="#{menuBean.goToRegister()}"
+								value="Registre-se" /></li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		
+		<ui:insert name="content" />
+
+		<section class="contato" id="contato">
+			<div class="meio-contato">
+				<h3>Explore</h3>
+				<ul>
+					<li><p:commandLink action="#{menuBean.goToInicio()}"
+							value="Início" /></li>
+					<li><p:commandLink action="#{menuBean.goToAssign()}"
+							value="Assinar Documento" /></li>
+					<li><p:commandLink action="#{menuBean.goToAuthAssign()}"
+							value="Autenticar Assinatura" /></li>
+					<li><p:commandLink action="#{menuBean.goToDocTypes()}"
+							value="Formatos Suportados" /></li>
+				</ul>
+			</div>
+			<div class="meio-contato">
+				<h3>Outros</h3>
+				<ul>
+					<li><p:commandLink action="#{menuBean.goToPrivacy()}"
+							value="Política de Privacidade" /></li>
+					<li><p:commandLink action="#{menuBean.goToTermUser()}"
+							value="Termos e Condições" /></li>
+					<li><p:commandLink action="#{menuBean.goToHelp()}"
+							value="Ajuda" /></li>
+				</ul>
+			</div>
+			<div class="meio-contato">
+				<h3>SAC</h3>
+				<h5>Segunda a Sexta</h5>
+				<h5>08:00h às 12:00h</h5>
+				<h5>13:00h às 17:00h</h5>
+				<h5>Exceto Feriados</h5>
+			</div>
+			<div class="meio-contato">
+				<h3>Endereço</h3>
+				<h5>Rua Dom Pedro II, 190</h5>
+				<h5>Messejana, Fortaleza-CE</h5>
+			</div>
+		</section>
+		<div class="last-text">
+			<p>
+				&#169; 2023 eSignDocs - Assinatura Digital de Documentos. Política
+				de Privacidade | Todos os Direitos Reservados - Desenvolvido por <span>Donatti</span>
+			</p>
+		</div>
+	</h:form>
+	<script type="module"
+		src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+	<script type="text/javascript"
+		src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
